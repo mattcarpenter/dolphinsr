@@ -104,7 +104,9 @@ export class DolphinSR {
     this._cachedCardsSchedule = computeCardsSchedule(this._state, this._currentDateGetter());
     return this._cachedCardsSchedule;
   }
-
+  _getState(): State {
+    return this._state;
+  }
   _nextCardId(): ?CardId {
     const s = this._getCardsSchedule();
     return pickMostDue(s, this._state);

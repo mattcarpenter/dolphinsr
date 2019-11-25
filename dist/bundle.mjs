@@ -550,6 +550,11 @@ var DolphinSR = function () {
       return this._cachedCardsSchedule;
     }
   }, {
+    key: '_getState',
+    value: function _getState() {
+      return this._state;
+    }
+  }, {
     key: '_nextCardId',
     value: function _nextCardId() {
       var s = this._getCardsSchedule();
